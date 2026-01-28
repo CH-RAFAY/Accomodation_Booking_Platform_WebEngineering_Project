@@ -25,7 +25,21 @@ def extract_body_content(content):
     # If no body tags, return whole content (fallback)
     return content
 
+import shutil
+
 def main():
+    # Create public directory
+    output_dir = 'public'
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+    
+    # Copy CSS
+    if os.path.exists('css'):
+        if os.path.exists(os.path.join(output_dir, 'css')):
+            shutil.rmtree(os.path.join(output_dir, 'css'))
+        shutil.copytree('css', os.path.join(output_dir, 'css'))
+        print("Copied css directory")
+
     # Read Includes
     header_php = read_file('inc/header.php')
     footer_php = read_file('inc/footer.php')
@@ -93,8 +107,13 @@ def main():
         
         # 7. Save as .html
         new_filename = filename.replace('.php', '.html')
-        write_file(new_filename, content)
-        print(f"Generated {new_filename}")
+        output_path = os.path.join(output_dir, new_filename)
+        
+        # Ensure subdirectory exists (for admin/index.html)
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        
+        write_file(output_path, content)
+        print(f"Generated {output_path}")
 
     # Generate Admin Index
     if os.path.exists('admin/index.php'):
@@ -103,8 +122,11 @@ def main():
         # Replace requires
         admin_content = admin_content.replace("<?php require('inc/link.php'); ?>", admin_link)
         admin_content = re.sub(r'<\?php.*?\?>', '', admin_content, flags=re.DOTALL)
-        write_file('admin/index.html', admin_content)
-        print("Generated admin/index.html")
+        
+        output_path = os.path.join(output_dir, 'admin/index.html')
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        write_file(output_path, admin_content)
+        print(f"Generated {output_path}")
 
 if __name__ == "__main__":
     main()
