@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestRiser - ABOUT</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!-- bootstrap-icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<!-- swipper-cdn -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+<!-- common css -->
+<link rel="stylesheet" href="css/common.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- swipper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-light">
+  <!-- navbar-->
+  <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white px-lg-3 py-lg-2 shadow-sm sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand me-5 fw-bold fs-3 h-font" href="index.html">RestRiser</a>
+        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link  me-2" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2" href="Rooms.html">Room</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2" href="Facilities.html">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2" href="contactUs.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  me-2" href="Ocassion.html">Occasion Booking</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                
+                    <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                    <button type="button" class="btn btn-outline-dark shadow-none me-lg-3 me-2" data-bs-toggle="modal"
+                        data-bs-target="#registerModal">Register</button>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <form method="POST" action="" novalidate>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3 d-flex align-items-center">
+                        <i class="bi bi-person-circle fs-3 me-2"></i> User Login
+                    </h1>
+                    <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"
+                        style="filter: invert(1);"></button>
+                </div>
+                <div class="modal-body">
+                    
+                        <div class="alert alert-danger"></div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input type="email" name="email" class="form-control shadow-none" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control shadow-none" required>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <button type="submit" name="login" class="btn btn-dark shadow-none">Login</button>
+                        <a href="javascript: void(0)" class="text-secondary text-decoration-none">Forgot
+                            Password</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <form method="POST" action="" novalidate>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-3 d-flex align-items-center">
+                        <i class="bi bi-person-lines-fill"></i> User Registration
+                    </h1>
+                    <button type="reset" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"
+                        style="filter: invert(1);"></button>
+                </div>
+                <div class="modal-body">
+                    
+                        <div class="alert alert-danger"></div>
+                    
+                    
+                        <div class="alert alert-success"></div>
+                    
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Full Name</label>
+                                <input type="text" name="name" class="form-control shadow-none" required>
+                            </div>
+                            <div class="col-md-6 p-0 mb-3">
+                                <label class="form-label">Email address</label>
+                                <input type="email" name="email" class="form-control shadow-none" required>
+                            </div>
+                            <div class="col-md-6 ps-0 mb-3">
+                                <label class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control shadow-none" required>
+                            </div>
+                            <div class="col-md-6 p-0 mb-3">
+                                <label class="form-label">Confirm Password</label>
+                                <input type="password" name="confirm_password" class="form-control shadow-none"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center my-1">
+                        <button type="submit" name="signup" class="btn btn-dark shadow-none">Register</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Verification Modal Removed -->
+
+<script>
+    // Handle Mobile Menu Overlay Click to Close
+    document.addEventListener('click', function(e) {
+        const navContent = document.getElementById('navbarSupportedContent');
+        const toggler = document.querySelector('.navbar-toggler');
+        
+        if (navContent && navContent.classList.contains('show')) {
+            // If clicking the overlay background (not links) or clicking outside
+            // Note: In our CSS, navContent IS the full screen overlay.
+            if (e.target === navContent) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navContent);
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                } else {
+                    navContent.classList.remove('show');
+                }
+            }
+        }
+    });
+
+    document.querySelectorAll('.modal .btn-close').forEach(button => {
+        button.addEventListener('click', function () {
+            const modal = this.closest('.modal');
+            modal.classList.remove('show');
+            modal.style.display = 'none';
+            document.querySelector('.modal-backdrop')?.remove();
+            document.body.classList.remove('modal-open');
+        });
+    });
+
+    document.querySelectorAll('a[href="javascript: void(0)"]').forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            // Password reset functionality
+        });
+    });
+</script>
+
+
+
+  <div class="my-5 px-4">
+    <h2 class="text-center fw-bold h-font"> ABOUT Us</h2>
+    <div class="h-line bg-dark mb-5"></div>
+    <p class="text-center mt-3">
+      At RestRiser, we believe in providing more than just a place to sleep. We offer an experience of comfort, luxury, and tranquility. <br>
+      Our hotel is designed to be your sanctuary away from home, whether you are traveling for business or leisure. <br>
+      With state-of-the-art facilities, exquisite dining options, and a dedicated staff ready to cater to your every need, we ensure your stay is memorable.
+    </p>
+  </div>
+
+
+  <div class="container">
+    <div class="row justify-content-between align-item-center">
+      <div class="col-lg-6 col-md-5 mb-4 order-md-1 order-2">
+        <h3 class="mb-3">Laorem ispns dolor sit </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+          Hic facere in alias adipisci atque. Non provident, sequi magnam 
+          delectus consequuntur nulla at, sed quam itaque ab maxime alias. Repudiandae, eveniet.
+        </p>
+        </div>
+
+        <div class="col-lg-5 col-md mb-4  order-md-2 order-1">
+          <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" class="w-100">
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- our hotel Mansgment-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-4 px-4">
+        <div class="bg-white rounded shadow p-4 border-top border-4 text-center pop h-100">
+          <img src="https://img.icons8.com/color/96/group.png" width="70px">
+          <h4 class="mt-3">200+ Customer</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 px-4">
+        <div class="bg-white rounded shadow p-4 border-top border-4 text-center pop h-100">
+          <img src="https://img.icons8.com/color/96/bed.png" width="70px">
+          <h4 class="mt-3">100+ ROOMS</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 px-4">
+        <div class="bg-white rounded shadow p-4 border-top border-4 text-center pop h-100">
+          <img src="https://img.icons8.com/color/96/star.png" width="70px">
+          <h4 class="mt-3">150+ REVIEWS</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 px-4">
+        <div class="bg-white rounded shadow p-4 border-top border-4 text-center pop h-100">
+          <img src="https://img.icons8.com/color/96/rating.png" width="70px">
+          <h4 class="mt-3">100+ RATINGS</h4>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4 px-4">
+        <div class="bg-white rounded shadow p-4 border-top border-4 text-center pop h-100">
+          <img src="https://img.icons8.com/color/96/waiter.png" width="70px">
+          <h4 class="mt-3">200+ STAFF</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Management -->
+  <h3 class="my-5 text-center fw-bold  h-font">Management Team</h3>
+  <div class="h-line bg-dark mb-5"></div>
+  <div class="container px-4">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper mb-5">
+      <div class="swiper-slide bg-white text-center rounded">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-100">
+        <h5 class="mt-2">Manager</h5>
+      </div>
+      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-100">
+        <h5 class="mt-2">Receptionist</h5>
+      </div>
+      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-100">
+        <h5 class="mt-2">Director</h5>
+      </div>
+      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-100">
+        <h5 class="mt-2">Staff</h5>
+      </div>
+      <div class="swiper-slide bg-white text-center overflow-hidden rounded">
+        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" class="w-100">
+        <h5 class="mt-2">Supervisor</h5>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  </div>
+
+<!--footer -->
+<!--footer-->
+<div class="container-fluid bg-white mt-5">
+  <div class="row">
+    <div class="col-lg-4 p-4">
+      <h3 class="h-font fw-bold fs-3 mb-2">RestRiser</h3>
+      <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div class="col-lg-4 p-4">
+      <h5 class="mb-3">Links</h5>
+      <a href="#" class="d-inline-block mb-2 text-decoration-none text-dark">Home</a><br>
+      <a href="#" class="d-inline-block mb-2 text-decoration-none text-dark">Facilities</a><br>
+      <a href="#" class="d-inline-block mb-2 text-decoration-none text-dark">Rooms</a><br>
+      <a href="#" class="d-inline-block mb-2 text-decoration-none text-dark">Contact US</a><br>
+      <a href="#" class="d-inline-block mb-2 text-decoration-none text-dark">About</a>
+    </div>
+
+    <div class="col-lg-4 p-4">
+      <h5 class="mb-3">Follow US</h5>
+      <a href="#" class="d-inline-block text-dark text text-decoration-none mb-2">
+        <i class="bi bi-facebook me-1"></i> Facebook
+      </a>
+      <br>
+
+      <a href="#" class="d-inline-block text-dark text text-decoration-none mb-2">
+        <i class="bi bi-twitter me-1"></i> Twitter
+      </a>
+      <br>
+
+      <a href="#" class="d-inline-block text-dark text text-decoration-none">
+        <i class="bi bi-instagram me-1"></i> Instagram
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<h6 class="text-center bg-dark text-white p-3 m-0"> RestRiser is part of Booking Holdings Inc., the world leader in online travel and related services.
+Copyright © 1996–2025 RestRiser™. All rights reserved.
+</h6>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+  slidesPerView:4,
+  spaceBetween: 40,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+      320:{
+        slidesPerView: 1,
+      },
+      640:{
+        slidesPerView: 1,
+      },
+      768:{
+        slidesPerView: 3,
+      },
+      1024:{
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+    
+</body>
+</html>
