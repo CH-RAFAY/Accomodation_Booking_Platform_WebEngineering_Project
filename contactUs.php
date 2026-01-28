@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <?php require('inc/link.php'); ?>
 </head>
 <body class="bg-light">
-<?php $page='contact'; require('inc/header.php'); ?>
+<?php require('inc/header.php');?>
 
 <div class="my-5 px-4">
     <h2 class="text-center fw-bold h-font">CONTACT US</h2>

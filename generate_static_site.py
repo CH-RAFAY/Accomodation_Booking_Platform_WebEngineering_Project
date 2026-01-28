@@ -92,9 +92,28 @@ def main():
             content = content.replace('</head>', f'<style>{header_css}</style>\n</head>')
             
         # 3. Replace inc/header.php
-        # Note: In index.php it is "inc\header.php" (backslash) or "inc/header.php"
-        content = content.replace("<?php require('inc/header.php');?>", header_body_content)
-        content = content.replace("<?php require('inc\header.php');?>", header_body_content)
+        # Create a page-specific header with 'active' class
+        current_header = header_body_content
+        # Regex to find the anchor tag for this file and add 'active' class
+        # Look for <a class="nav-link ... " href="CURRENT_FILE">
+        # We need to be careful with regex, as the class attribute might have other classes
+        # The pattern in header.php after PHP strip is: <a class="nav-link  me-2" href="filename">
+        
+        # We'll search for the href and then prepend 'active' to the classes
+        # Note: We use a lookbehind or just match the whole tag.
+        # Simpler: replace 'href="filename"' with 'class="... active ..."' ? No, class is separate.
+        
+        # Let's target the specific structure we know exists
+        # <a class="nav-link  me-2" href="index.php">
+        # We want: <a class="nav-link active me-2" href="index.php">
+        
+        # Escape the filename for regex
+        escaped_filename = re.escape(filename)
+        pattern = r'(<a\s+class="nav-link)([^"]*)("\s+href="' + escaped_filename + '")'
+        current_header = re.sub(pattern, r'\1 active\2\3', current_header)
+        
+        content = content.replace("<?php require('inc/header.php');?>", current_header)
+        content = content.replace("<?php require('inc\header.php');?>", current_header)
         
         # 4. Replace inc/footer.php
         content = content.replace("<?php require('inc/footer.php');?>", footer_content)

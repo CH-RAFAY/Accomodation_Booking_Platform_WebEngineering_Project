@@ -19,7 +19,7 @@
 
 
   <div class="my-5 px-4">
-    <h2 class="text-center fw-bold h-font"> ABOUT Us</h2>
+    <h2 class="text-center fw-bold h-font"> ABOUT US</h2>
     <div class="h-line bg-dark mb-5"></div>
     <p class="text-center mt-3">
       At RestRiser, we believe in providing more than just a place to sleep. We offer an experience of comfort, luxury, and tranquility. <br>

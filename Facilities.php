@@ -15,10 +15,10 @@
 
 <body class="bg-light">
   <!-- navbar-->
-  <?php $page='facilities'; require('inc/header.php');?>
+  <?php require('inc/header.php');?>
 
   <div class="my-5 px-4">
-    <h2 class="text-center fw-bold h-font"> Facilities</h2>
+    <h2 class="text-center fw-bold h-font"> FACILITIES</h2>
     <div class="h-line bg-dark"></div>
     <p class="text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium 
       similique illum porro nisi autem quibusdam unde <br>debitis soluta magnam officiis recusandae, 

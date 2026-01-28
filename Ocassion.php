@@ -15,7 +15,8 @@
 
   
 
-<?php require('inc/header.php');?>
+  
+
 
   <style>
     :root {
@@ -319,6 +320,7 @@
   </style>
 </head>
 <body>
+  <?php require('inc/header.php');?>
   <div id="root"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>

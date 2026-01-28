@@ -252,7 +252,7 @@
   
 
   <!-- Testimonial -->
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Testimonials</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">TESTIMONIALS</h2>
   <div class="h-line bg-dark mb-5"></div>
   <div class="container mt-5">
     <div class="row">
@@ -328,7 +328,7 @@
   </div>
 
   <!-- Reach US -->
-  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">Reach US</h2>
+  <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">REACH US</h2>
   <div class="h-line bg-dark mb-5"></div>
   <div class="container">
     <div class="row">

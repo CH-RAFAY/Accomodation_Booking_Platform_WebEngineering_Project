@@ -18,7 +18,7 @@
   <?php require('inc/header.php');?>
 
   <div class="my-5 px-4">
-    <h2 class="text-center fw-bold h-font"> ROOMs</h2>
+    <h2 class="text-center fw-bold h-font"> ROOMS</h2>
     <div class="h-line bg-dark"></div>
   </div>
 
@@ -81,7 +81,7 @@
       </nav>
       </div>
 
-      <div class="col-lg-9 col-md-12 px-4">
+      <div class="col-lg-9 col-md-12 px-4 d-flex flex-column justify-content-between">
         <!-- Card 1 -->
         <div class="card mb-3 border-0 shadow">
           <div class="row g-0 p-3 align-items-center">

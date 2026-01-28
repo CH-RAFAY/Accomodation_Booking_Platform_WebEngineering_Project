@@ -103,7 +103,7 @@ $view = isset($_GET['view']) ? $_GET['view'] : 'dashboard';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo ($view == 'admin' ? 'Admin Dashboard' : 'User Dashboard') . ' - RestRiser'; ?></title>
+    <title>User Dashboard - RestRiser</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
     <style>
@@ -163,7 +163,7 @@ $view = isset($_GET['view']) ? $_GET['view'] : 'dashboard';
         }
 
         .modal-dialog-centered {
-            display Wflex;
+            display: flex;
             align-items: center;
             min-height: calc(100% - 1rem);
         }
@@ -423,8 +423,7 @@ $view = isset($_GET['view']) ? $_GET['view'] : 'dashboard';
                         <?php echo htmlspecialchars($_SESSION['user_name']); ?>
                     </div>
                     <?php if ($_SESSION['user_role'] == 'admin'): ?>
-                        <a href="?view=admin" class="btn btn-outline-dark shadow-none me-lg-3 me
-                        me-2">Admin Panel</a>
+                        <a href="?view=admin" class="btn btn-outline-dark shadow-none me-lg-3 me-2">Admin Panel</a>
                     <?php endif; ?>
                     <a href="index.php?logout=true" class="btn btn-outline-dark shadow-none me-lg-3 me-2">Logout</a>
                 </div>
@@ -683,6 +682,3 @@ $view = isset($_GET['view']) ? $_GET['view'] : 'dashboard';
 </body>
 
 </html>
-
-
-testoo.php
